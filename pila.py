@@ -5,13 +5,13 @@ class Pila:
     # Llena la pila
     def push(self, item):
         self.items.append(item)
-        print(f'Item {item} apilado')
+        #print(f'Item {item} apilado')
 
     # Saca elementos de la pila
     def pop(self):
         if not self.es_vacia():
             item = self.items.pop()
-            print(f'Item {item} desapilado')
+           # print(f'Item {item} desapilado')
             return item
         else:
             print('La pila está vacía')
