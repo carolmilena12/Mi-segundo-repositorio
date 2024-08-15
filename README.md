@@ -1,3 +1,3 @@
-#ESTRUCTURA DE DATOS
-# Ejercios hechos en calse cuartos semtre EMI
+##ESTRUCTURA DE DATOS
+# Ejercicios hechos en clases cuarto semtres EMI
 Lic. Carol Milena V.P.
