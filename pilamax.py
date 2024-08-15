@@ -1,36 +1,33 @@
 # main.py
-
 from pila import Pila
 
-def obtener_valor_maximo(pila):
+def obtener_valor_mayor(pila):
     if pila.es_vacia():
-        print("La pila esta sin elementos")
+        print ("Pila vacia")
         return None
-    else:
+    else: 
         pila_aux = Pila()
         maximo = pila.peek()
-        while not pila.es_vacia():# recorre la pila buscando el maximo valor
-            item = pila.pop()
+        while not pila.es_vacia():
+            item=pila.pop()
             if item > maximo:
-                maximo = item
+                maximo=item
             pila_aux.push(item)
-
-        while not pila_aux.es_vacia():
+        
+        while not pila_aux.es_vacia:
             pila.push(pila_aux.pop())
         return maximo
-        
-pila = Pila()
-pila.push(5)
-pila.push(6)
-pila.push(15)
-pila.push(4)
-pila.push(1)
-pila.push(3)
-
-mayor = obtener_valor_maximo(pila)
-if mayor is not None:
-    print (f"El valor maximo de la pila es {mayor}")
-
-pila.mostrar()
-
     
+pila1 = Pila()
+pila1.push('c')
+pila1.push('a')
+pila1.push('r')
+pila1.push('o')
+pila1.push('l')
+
+pila1.mostrar()
+
+max= obtener_valor_mayor(pila1)
+print (f'El elemento de mayor valor es {max}')
+
+
