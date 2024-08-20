@@ -34,10 +34,5 @@ class Pila:
 
     # Método para mostrar la pila
     def mostrar(self):
-        if not self.es_vacia():
-            print("Contenido de la pila:")
-            for item in reversed(self.items):
-                print(item)
-        else:
-            print("La pila está vacía")
+        return [str(item) for item in reversed(self.items)]
 
