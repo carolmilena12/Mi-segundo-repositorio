@@ -7,6 +7,9 @@ class Producto:
     def get_precio(self):
         return self.precio_prod
     
+    def get_nombre(self):
+        return self.nombre_prod
+    
     def __str__(self):
         return f"{self.nombre_prod} -- {self.precio_prod}"
     
